@@ -1,0 +1,23 @@
+GET http://localhost:8000/api/usuarios
+###
+POST http://localhost:8000/api/usuarios
+Content-Type: application/json
+
+{
+  "nombre":"Viktor Frankl",
+  "email": "viktor@gmail.com"
+}
+
+###
+GET http://localhost:8000/api/usuarios/4
+
+###
+PUT http://localhost:8000/api/usuarios/4
+Content-Type: application/json
+
+{
+  "nombre":"Viktor"
+}
+
+###
+DELETE http://localhost:8000/api/usuarios/1
